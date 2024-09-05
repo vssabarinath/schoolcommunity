@@ -1,0 +1,170 @@
+body
+{
+  margin: 0;
+   font-size: 15px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+   padding: 0;
+}
+*
+{
+    box-sizing: border-box;
+ 
+}
+.container
+{
+    display: flex;
+}
+.right-side
+{
+    display: flex;
+    width: 50%;
+}
+header
+{ 
+   
+   
+    padding: 23px;
+    border-top: 4px solid brown;
+    border-bottom: 4px solid brown; 
+    text-align: center;
+}
+h1,h2{
+    font-size: 2em;
+}
+
+#header-tag
+{
+  filter: drop-shadow(0 0 10px brown);
+  animation: glow 1s alternate infinite;
+  
+
+}
+
+@keyframes glow{
+    0%
+    {
+        filter: drop-shadow(0 0 10px rgb(105, 80, 80));
+
+    }
+    100%
+    {
+        filter: drop-shadow(0 0 30px rgb(209, 169, 169));
+    }
+}
+
+section
+{
+    padding: 20px;
+    width: 50%;
+}
+p{
+    
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-indent: 20px;
+
+}
+a,  a:focus {
+    outline: none;
+    text-decoration: none;
+    color: brown;
+  }
+  a:visited {
+    color: rgb(81, 14, 81);
+  }
+  a:hover
+  {
+    text-decoration: underline;
+  }
+ 
+aside,nav
+{
+    padding: 20px;
+    float: right;
+   
+
+}
+aside
+{   float: right;
+    width: 80%;
+}
+nav
+{
+    width: 80%;
+}
+
+footer
+{
+    border-top: 4px solid brown;
+    border-bottom: 4px solid brown; 
+   
+    padding: 20px;
+    text-align: center;
+}
+.anchor {
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    line-height: 4;
+    color: brown;
+    
+}
+
+.anchor:link,
+.anchor:visited,
+.anchor:focus {
+    background: transparent;
+   
+ 
+}
+
+.anchor:hover {
+  
+    text-decoration: none;
+}
+
+.ext-link{
+    width: 10px;
+    height: 10px;
+}
+.list-check
+{
+    text-align: center;
+    border: 1px solid brown;
+    
+}
+.list-check:hover
+{
+    background: beige;
+}
+.list-check:active {
+    background: darkred;
+    color: white;
+}
+ 
+
+@media screen and (max-width: 600px)
+{
+    section
+    {
+        width: 100%;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .right-side
+    {
+        flex-direction: column;
+    }
+aside {
+
+    width: 100%;
+}
+nav {
+
+    width: 100%;
+}
+}
